@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="学习HTML和css">
+    <meta name="keywords" content="巩固HTML和css知识">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>班级网站</title>
+    <script type="text/javascript">
+        var d = new Date()
+        var time = d.getHours()
+        if (time < 12) {
+            alert("上午好")
+        } else if (time > 12 & time < 17) {
+            alert("下午好")
+        } else {
+            alert("晚上好")
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <h1><a href="index.html">班级首页</a></h1>
+            <ul>
+                <li>
+                    <a class="current" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="login.html">登录</a>
+                </li>
+                <li>
+                    <a href="register.html">注册</a>
+                </li>
+                <li>
+                    <a href="about.html">关于我们</a>
+                </li>
+                <li>
+                    <a href="contact.html">联系我们</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <h1>欢迎来到<span class="text-primary">我的班级</span></h1>
+                    <p>很开心能够与你相遇</p>
+                    <a class="btn" href="about.html">关于我们</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section id="home-info" class="bg-dark">
+        <div class="info-img">
+
+        </div>
+        <div class="info-content">
+            <h2><span class="text-primary">班级</span>介绍</h2>
+            <p>这是一个团结奋进的班级体、一个温馨和谐的大家庭、一个生机盎然的乐园、一片纯真圣洁的心灵土壤。</p>
+            <a class="btn btn-light" href="about.html">阅读更多</a>
+        </div>
+    </section>
+    <section id="features">
+        <div class="box bg-light">
+            <i class="fa fa-users fa-3x"></i>
+            <h3>学校介绍</h3>
+            <p>江西科技学院位于江西省南昌市，是全日制民办本科高校。</p>
+        </div>
+        <div class="box bg-primary">
+            <i class="fa fa-leanpub fa-3x"></i>
+            <h3>班级介绍</h3>
+            <p>是江西科技学院信息工程学院的一个优秀班级。</p>
+        </div>
+        <div class="box bg-light">
+            <i class="fa fa-graduation-cap fa-3x"></i>
+            <h3>成员介绍</h3>
+            <p>班级这个大家庭有全国各地的同学聚集在一起组成的班级。</p>
+        </div>
+    </section>
+    <div class="clr"></div>
+    <footer id="main-footer">
+        <p>首页 &copy; 2021制作</p>
+    </footer>
+</body>
+
+</html>
